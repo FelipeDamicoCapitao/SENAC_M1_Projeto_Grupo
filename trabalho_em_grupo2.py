@@ -40,10 +40,16 @@ def sep2(X):
     print(f"{NBranco}={Corfim}"*L)
     print(Y2,X,Y2)
     print(f"{NBranco}={Corfim}"*L)
-
+# divisão de uma linha
+def sep3():
+    L = 80
+    Y2 = (" "*L)
+    print("")
+    print(f"{NCinza}={Corfim}"*L)
 # ###########################################################################################################
 # Função Pergunta em Caso de Erro e fim - Geral (Menu + Sair)
 def fim():
+    sep3()
     print( f"{NAmarelo}\nSelecione a opção de atendimento:{Corfim}\n")
     print( "1 - Retornar ao menu principal")
     print( "2 - Sair\n")
@@ -64,6 +70,7 @@ def fim():
 
 # Função Pergunta final - ingresso + Geral
 def fimingresso():
+    sep3()
     print( f"{NAmarelo}\nSelecione a opção de atendimento:{Corfim}\n")
     print( "1 - Retornar ao menu de Ingressos")
     print( "2 - Retornar ao menu principal")
@@ -87,6 +94,7 @@ def fimingresso():
 
 # Função Pergunta final - Duvidas = Geral
 def fimduvidas():
+    sep3()
     print( f"{NAmarelo}\nSelecione a opção de atendimento:{Corfim}\n")
     print( "1 - Retornar ao menu de dúvidas frequentes")
     print( "2 - Retornar ao menu principal")
@@ -107,6 +115,7 @@ def fimduvidas():
     else:
         print( f"{NVermelho}Digito Errado, digite novamente{cor2b}")
         fimduvidas()
+
 ###########################################################################################################
 # Função Sair - Agredecimento e fim de programa
 def sair():
