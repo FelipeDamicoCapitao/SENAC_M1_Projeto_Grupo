@@ -42,7 +42,7 @@ def sep2(X):
     print(f"{NBranco}={Corfim}"*L)
 
 # ###########################################################################################################
-# Função Pergunta final - Geral (Menu + Sair)
+# Função Pergunta em Caso de Erro e fim - Geral (Menu + Sair)
 def fim():
     print( f"{NAmarelo}\nSelecione a opção de atendimento:{Corfim}\n")
     print( "1 - Retornar ao menu principal")
@@ -62,7 +62,6 @@ def fim():
         print( f"{NVermelho}Digito Errado, digite novamente{cor2b}")
         fim()
 
-    # ###########################################################################################################
 # Função Pergunta final - ingresso + Geral
 def fimingresso():
     print( f"{NAmarelo}\nSelecione a opção de atendimento:{Corfim}\n")
@@ -86,7 +85,6 @@ def fimingresso():
         print( f"{NVermelho}Digito Errado, digite novamente{cor2b}")
         fimingresso()
 
-    # ###########################################################################################################
 # Função Pergunta final - Duvidas = Geral
 def fimduvidas():
     print( f"{NAmarelo}\nSelecione a opção de atendimento:{Corfim}\n")
@@ -109,6 +107,7 @@ def fimduvidas():
     else:
         print( f"{NVermelho}Digito Errado, digite novamente{cor2b}")
         fimduvidas()
+###########################################################################################################
 # Função Sair - Agredecimento e fim de programa
 def sair():
     X = f"Obrigado, nos vemos na Sapucai em 2024"
@@ -195,15 +194,13 @@ def ingresso():
     else:
         print( f"{NVermelho}Digito Errado, digite novamente{Corfim}")
         fim()
-    
 # ###########################################################################################################
 #Função opção 1.1 - Arquibancada
 def arquibancada():
     X ="Ingressos de Arquibancada"
     sep(X)
 
-    print ("programa do luigi2")
-    print ("programa do luigi2")
+    from arquibancada import arquibancada
     
 #DEfinição
     fimingresso()
@@ -214,7 +211,7 @@ def frisa():
     X ="Ingressos de Frisa"
     sep(X)
 
-    print("em produção")
+    from FrisaTeste import frisa
 
 #DEfinição
     fimingresso()
