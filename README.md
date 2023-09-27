@@ -15,4 +15,4 @@
   pré requisitos: Pyhton instalado
 
   #1 - CLonar repositorio:
-  git clone https://github.com/FelipeDamicoCapitao/Trabalho_em_grupo
+  https://github.com/FelipeDamicoCapitao/Trabalho_em_grupo
