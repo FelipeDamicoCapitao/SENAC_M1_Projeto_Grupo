@@ -4,14 +4,10 @@
 ## Sobre o Projeto
  O Chat Rio Carnaval 2024 é um propgrama Python contruido durante o módulo 1 do Curso de Analista de Dados do Senac/Resilia 2023.
 
-
-# Trabalho_em_grupo
-
 # Tecnologias utilizadas
  - Python
 
-## Como Executar o projeto:
-
+# Como Executar o projeto:
   pré requisitos:
    - Pyhton instalado
    - IDE instalado
@@ -23,7 +19,7 @@
   # executar o projeto
   chat_Rio_Carnaval_2024.py
 
-## Autores:
+# Autores:
 
   Felipe Damico Capitão - capitao.damico@gmail.com - https://github.com/FelipeDamicoCapitao
   Priscila Gusso Cruz - prigussocruz@gmail.com
