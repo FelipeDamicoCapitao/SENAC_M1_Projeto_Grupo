@@ -11,14 +11,14 @@ Corfim = "\033[m"
 
 # ###########################################################################################################
 
-from separacao import sep
-from separacao import sep2
-from separacao import sep3
+from B1_separacao import sep
+from B1_separacao import sep2
+from B1_separacao import sep3
 
 # ###########################################################################################################
 
 
-def ensaio():
+def ensaios1():
     X = "Ensaios Técnicos"
     sep(X)
 
@@ -74,4 +74,4 @@ def ensaio():
     X = f"{NCinza}{X}{Corfim}"
     sep2(X)
 
-ensaio()
+ensaios1()

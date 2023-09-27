@@ -13,9 +13,9 @@ Corfim = "\033[m"
 
 # ###########################################################################################################
 
-from separacao import sep
-from separacao import sep2
-from separacao import sep3
+from B1_separacao import sep
+from B1_separacao import sep2
+from B1_separacao import sep3
 
 ######################################################################################################################################################
 

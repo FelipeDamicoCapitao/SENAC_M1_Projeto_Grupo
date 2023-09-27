@@ -14,9 +14,9 @@ Corfim = "\033[m"
 # ######################################################################################################################################################
 # Importa Função Cabeçalho de separação
 
-from separacao import sep
-from separacao import sep2
-from separacao import sep3
+from B1_separacao import sep
+from B1_separacao import sep2
+from B1_separacao import sep3
 
 
 # ###########################################################################################################
@@ -55,7 +55,7 @@ def menu():
 
     #Opção - Divergentes
     else:
-        print( f"{NVermelho}Digito Errado, digite novamente{cor2b}")
+        print( f"{NVermelho}Digito Errado, digite novamente{Corfim}")
         menu()
 
 # ###########################################################################################################
@@ -98,7 +98,9 @@ def arquibancada():
     X ="Ingressos de Arquibancada"
     sep(X)
 
-    from arquibancada import arquibancada
+    from A1_1_arquibancada import arquibancada1
+
+    arquibancada1()
     
 #DEfinição
     fimingresso()
@@ -109,7 +111,9 @@ def frisa():
     X ="Ingressos de Frisa"
     sep(X)
 
-    from frisa import frisa
+    from A1_2_frisa import frisa1
+
+    frisa1()
 
 #DEfinição
     fimingresso()
@@ -118,17 +122,20 @@ def frisa():
 #Função opção 2 - Ordem de desfile
 def desfile():
 
-    from ordem_de_desfile import desfiles1
+    from A2_ordem_de_desfile import desfiles1
+
+    desfiles1()
 
     #DEfinição
     fim()
-
 
 # ###########################################################################################################
 #Função opção 3 - Ensaios Técnicos
 def ensaios():
 
-    from ensaio_tecnico import ensaios1
+    from A3_ensaio_tecnico import ensaios1
+
+    ensaios1()
 
 #DEfinição
     fim()
@@ -137,7 +144,9 @@ def ensaios():
 #Função opção 4 - Duvidas Frequentes
 def duvidas():
 
-    from duvidas_frequentes import duvidas1
+    from A4_duvidas_frequentes import duvidas1
+
+    duvidas1()
 
 #DEfinição
     fimduvidas()
@@ -186,7 +195,7 @@ def fimingresso():
 
     #Opção - Divergentes
     else:
-        print( f"{NVermelho}Digito Errado, digite novamente{cor2b}")
+        print( f"{NVermelho}Digito Errado, digite novamente{Corfim}")
         fimingresso()
 
 # Função Pergunta final - Duvidas = Geral
@@ -210,7 +219,7 @@ def fimduvidas():
 
     #Opção - Divergentes
     else:
-        print( f"{NVermelho}Digito Errado, digite novamente{cor2b}")
+        print( f"{NVermelho}Digito Errado, digite novamente{Corfim}")
         fimduvidas()
 
 # ######################################################################################################################################################
@@ -230,6 +239,15 @@ def sair():
 
 # ######################################################################################################################################################
 # executar programa
+X = "Chat Rio Carnaval 2024"
+sep(X)
+X = "Sejam bem-vindos ao maior espetáculo da terra."
+L = 80
+
+Y = int(((L-len(X)))/2)
+Y2 = (" "*Y)
+print(f"{Y2}{NCiano}{X}{Corfim}")
+
 menu()
 
 

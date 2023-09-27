@@ -11,13 +11,13 @@ Corfim = "\033[m"
 
 # ###########################################################################################################
 
-from separacao import sep
-from separacao import sep2
-from separacao import sep3
+from B1_separacao import sep
+from B1_separacao import sep2
+from B1_separacao import sep3
 
 # ###########################################################################################################
 
-def duvida():
+def duvidas1():
     X ="Dúvidas Frequentes"
     sep(X)
     
@@ -87,6 +87,6 @@ def duvida():
         #Opção - Divergentes
     else:
         print( f"{NVermelho}Digito Errado, digite novamente{Corfim}")
-        duvida()
+        duvidas1()
 
-duvida()
+duvidas1()

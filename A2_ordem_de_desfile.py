@@ -10,14 +10,14 @@ NBranco = "\033[1;37;1m"
 Corfim = "\033[m"
 
 # ###########################################################################################################
-from separacao import sep
-from separacao import sep2
-from separacao import sep3
+from B1_separacao import sep
+from B1_separacao import sep2
+from B1_separacao import sep3
 
 # ###########################################################################################################
 
 
-def desfile():
+def desfiles1():
     X = "Ordem de Desfile"
     sep(X)
 
@@ -48,4 +48,4 @@ def desfile():
 
     sep2(X)
 
-desfile()
+desfiles1()
