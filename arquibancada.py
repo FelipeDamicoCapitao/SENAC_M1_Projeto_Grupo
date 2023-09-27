@@ -11,7 +11,15 @@ NCiano = "\033[1;36;1m"
 NBranco = "\033[1;37;1m"
 Corfim = "\033[m"
 
+# ###########################################################################################################
+
+from separacao import sep
+from separacao import sep2
+from separacao import sep3
+
 ######################################################################################################################################################
+
+
 
 def arquibancada():
     setor_2_11 = ('Setor 2', 'Setor 3', 'Setor 4', 'Setor 5', 'Setor 10', 'Setor 11')
@@ -94,6 +102,8 @@ def arquibancada():
         preco_meia, preco_inteira = (100.00, 200.00) 
 
     preco_final = preco_meia if ingresso_escolhido == 'Meia entrada' else preco_inteira
+
+    sep3()
 
     print(f"\nVocê escolheu o setor: {setor_escolhido}")
     print(f"Você escolheu o ingresso: {ingresso_escolhido}")

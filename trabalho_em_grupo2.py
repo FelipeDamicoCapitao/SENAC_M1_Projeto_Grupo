@@ -11,96 +11,13 @@ NCiano = "\033[1;36;1m"
 NBranco = "\033[1;37;1m"
 Corfim = "\033[m"
 
-# ###########################################################################################################
-# Função Cabeçalho de separação
+# ######################################################################################################################################################
+# Importa Função Cabeçalho de separação
 
 from separacao import sep
 from separacao import sep2
 from separacao import sep3
 
-# ###########################################################################################################
-# Função Pergunta em Caso de Erro e fim - Geral (Menu + Sair)
-def fim():
-    sep3()
-    print( f"{NAmarelo}\nSelecione a opção de atendimento:{Corfim}\n")
-    print( "1 - Retornar ao menu principal")
-    print( "2 - Sair\n")
-    X12 = (input(f"{NVerde}Qual a opção desejada?{Corfim}"))
-
-    #Opção 3    
-    if X12 == "1":
-        menu()
-
-    #Opção 4    
-    elif X12 == "2": #Sair
-        sair()
-
-    #Opção - Divergentes
-    else:
-        print( f"{NVermelho}Digito Errado, digite novamente{cor2b}")
-        fim()
-
-# Função Pergunta final - ingresso + Geral
-def fimingresso():
-    sep3()
-    print( f"{NAmarelo}\nSelecione a opção de atendimento:{Corfim}\n")
-    print( "1 - Retornar ao menu de Ingressos")
-    print( "2 - Retornar ao menu principal")
-    print( "3 - Sair\n")
-    X12 = (input(f"{NVerde}Qual a opção desejada?{Corfim}"))
-
-    #Opção 1    
-    if X12 == "1":
-        ingresso()
-    #Opção 2  
-    elif X12 == "2": 
-        menu()
-    #Opção 4    
-    elif X12 == "3": #Sair
-        sair()
-
-    #Opção - Divergentes
-    else:
-        print( f"{NVermelho}Digito Errado, digite novamente{cor2b}")
-        fimingresso()
-
-# Função Pergunta final - Duvidas = Geral
-def fimduvidas():
-    sep3()
-    print( f"{NAmarelo}\nSelecione a opção de atendimento:{Corfim}\n")
-    print( "1 - Retornar ao menu de dúvidas frequentes")
-    print( "2 - Retornar ao menu principal")
-    print( "3 - Sair\n")
-    X12 = (input(f"{NVerde}Qual a opção desejada?{Corfim}"))
-
-    #Opção 1    
-    if X12 == "1":
-        duvidas()
-    #Opção 2  
-    elif X12 == "2": 
-        menu()
-    #Opção 4    
-    elif X12 == "3": #Sair
-        sair()
-
-    #Opção - Divergentes
-    else:
-        print( f"{NVermelho}Digito Errado, digite novamente{cor2b}")
-        fimduvidas()
-
-###########################################################################################################
-# Função Sair - Agredecimento e fim de programa
-def sair():
-    X = f"Obrigado, nos vemos na Sapucai em 2024"
-    L = 80
-
-    Y = int(((L-len(X)))/2)
-    Y2 = (" "*Y)
-    print("")
-    print(f"{NAmarelo}="*L)
-    print(f"{Y2}{X}")
-    print(f"="*L)
-    print(f"{Corfim}")
 
 # ###########################################################################################################
 #Função Menu Inicial      
@@ -192,7 +109,7 @@ def frisa():
     X ="Ingressos de Frisa"
     sep(X)
 
-    from FrisaTeste import frisa
+    from frisa import frisa
 
 #DEfinição
     fimingresso()
@@ -201,7 +118,7 @@ def frisa():
 #Função opção 2 - Ordem de desfile
 def desfile():
 
-    from ordem_de_desfile import desfile
+    from ordem_de_desfile import desfiles1
 
     #DEfinição
     fim()
@@ -211,7 +128,7 @@ def desfile():
 #Função opção 3 - Ensaios Técnicos
 def ensaios():
 
-    from ensaio_tecnico import ensaio
+    from ensaio_tecnico import ensaios1
 
 #DEfinição
     fim()
@@ -220,13 +137,98 @@ def ensaios():
 #Função opção 4 - Duvidas Frequentes
 def duvidas():
 
-    from duvidas_frequentes import duvida
+    from duvidas_frequentes import duvidas1
 
 #DEfinição
     fimduvidas()
 
 
-# ###########################################################################################################
+# ######################################################################################################################################################
+# Função Pergunta em Caso de Erro e fim - Geral (Menu + Sair)
+def fim():
+    sep3()
+    print( f"{NAmarelo}\nSelecione a opção de atendimento:{Corfim}\n")
+    print( "1 - Retornar ao menu principal")
+    print( "2 - Sair\n")
+    X12 = (input(f"{NVerde}Qual a opção desejada?{Corfim}"))
+
+    #Opção 3    
+    if X12 == "1":
+        menu()
+
+    #Opção 4    
+    elif X12 == "2": #Sair
+        sair()
+
+    #Opção - Divergentes
+    else:
+        print( f"{NVermelho}Digito Errado, digite novamente{cor2b}")
+        fim()
+
+# Função Pergunta final - ingresso + Geral
+def fimingresso():
+    sep3()
+    print( f"{NAmarelo}\nSelecione a opção de atendimento:{Corfim}\n")
+    print( "1 - Retornar ao menu de Ingressos")
+    print( "2 - Retornar ao menu principal")
+    print( "3 - Sair\n")
+    X12 = (input(f"{NVerde}Qual a opção desejada?{Corfim}"))
+
+    #Opção 1    
+    if X12 == "1":
+        ingresso()
+    #Opção 2  
+    elif X12 == "2": 
+        menu()
+    #Opção 4    
+    elif X12 == "3": #Sair
+        sair()
+
+    #Opção - Divergentes
+    else:
+        print( f"{NVermelho}Digito Errado, digite novamente{cor2b}")
+        fimingresso()
+
+# Função Pergunta final - Duvidas = Geral
+def fimduvidas():
+    sep3()
+    print( f"{NAmarelo}\nSelecione a opção de atendimento:{Corfim}\n")
+    print( "1 - Retornar ao menu de dúvidas frequentes")
+    print( "2 - Retornar ao menu principal")
+    print( "3 - Sair\n")
+    X12 = (input(f"{NVerde}Qual a opção desejada?{Corfim}"))
+
+    #Opção 1    
+    if X12 == "1":
+        duvidas()
+    #Opção 2  
+    elif X12 == "2": 
+        menu()
+    #Opção 4    
+    elif X12 == "3": #Sair
+        sair()
+
+    #Opção - Divergentes
+    else:
+        print( f"{NVermelho}Digito Errado, digite novamente{cor2b}")
+        fimduvidas()
+
+# ######################################################################################################################################################
+# Função Sair - Agredecimento e fim de programa
+def sair():
+    X = f"Obrigado, nos vemos na Sapucai em 2024"
+    L = 80
+
+    Y = int(((L-len(X)))/2)
+    Y2 = (" "*Y)
+    print("")
+    print(f"{NAmarelo}="*L)
+    print(f"{Y2}{X}")
+    print(f"="*L)
+    print(f"{Corfim}")
+
+
+# ######################################################################################################################################################
 # executar programa
 menu()
 
