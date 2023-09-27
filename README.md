@@ -5,7 +5,7 @@
  O Chat Rio Carnaval 2024 é um programa Python contruido, em grupo, durante o módulo 1 do Curso de Analista de Dados do Senac/Resilia 2023.
 
 # Funcionalidades do Projeto
-O objetivo principal do projeto é informar o interlocutor sobre determinadas informações sobre o Carnaval 2024 do grupo especial. Neste projeto focamos em 4 tipo de informações diferentes, que podem ser acessadas facilmente atraves de um chat simples, são elas:
+O objetivo principal do projeto é informar o interlocutor sobre determinadas informações do Carnaval 2024 do grupo especial. Neste projeto focamos em 4 tipo de informações diferentes, que podem ser acessadas facilmente atraves de um chat simples, são elas:
 - 1 - Ingressos
 - 2 - Ordem de desfile
 - 3 - Calendário de ensaios técnicos
