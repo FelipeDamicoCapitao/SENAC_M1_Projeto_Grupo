@@ -19,6 +19,8 @@ from B1_separacao import sep2
 from B1_separacao import sep3
 
 
+
+
 # ###########################################################################################################
 #Função Menu Inicial      
 def menu():
@@ -39,15 +41,15 @@ def menu():
                  
     #Opção 2
     elif X0 == "2":
-        desfile() #Função nao configurada
+        desfile() 
   
     #Opção 3    
     elif X0 == "3":
-        ensaios() #Função nao configurada
+        ensaios() 
 
     #Opção 4    
     elif X0 == "4": 
-        duvidas() #Função nao configurada
+        duvidas() 
 
     #Opção 5    
     elif X0 == "5": #Sair
@@ -97,12 +99,11 @@ def ingresso():
 def arquibancada():
     X ="Ingressos de Arquibancada"
     sep(X)
-
+# Importa do arquivo __________ a função ___________:
     from A1_1_arquibancada import arquibancada1
-
+#Executa a Função:
     arquibancada1()
-    
-#DEfinição
+# Apresentas as opções de termino:
     fimingresso()
 
 # ###########################################################################################################
@@ -110,46 +111,46 @@ def arquibancada():
 def frisa():
     X ="Ingressos de Frisa"
     sep(X)
-
+# Importa do arquivo __________ a função ___________:
     from A1_2_frisa import frisa1
-
+#Executa a Função:
     frisa1()
-
-#DEfinição
+# Apresentas as opções de termino:
     fimingresso()
 
 # ###########################################################################################################
 #Função opção 2 - Ordem de desfile
 def desfile():
-
+# Importa do arquivo __________ a função ___________:
     from A2_ordem_de_desfile import desfiles1
-
+#Executa a Função:
     desfiles1()
-
-    #DEfinição
+# Apresentas as opções de termino:
     fim()
 
 # ###########################################################################################################
 #Função opção 3 - Ensaios Técnicos
 def ensaios():
-
+# Importa do arquivo __________ a função ___________:
     from A3_ensaio_tecnico import ensaios1
-
+#Executa a Função:
     ensaios1()
-
-#DEfinição
+# Apresentas as opções de termino:
     fim()
 
 # ###########################################################################################################
 #Função opção 4 - Duvidas Frequentes
 def duvidas():
-
+# Importa do arquivo __________ a função ___________:
     from A4_duvidas_frequentes import duvidas1
-
+#Executa a Função:
     duvidas1()
-
-#DEfinição
+# Apresentas as opções de termino:
     fimduvidas()
+
+
+
+
 
 
 # ######################################################################################################################################################
@@ -235,6 +236,10 @@ def sair():
     print(f"{Y2}{X}")
     print(f"="*L)
     print(f"{Corfim}")
+
+
+
+
 
 
 # ######################################################################################################################################################
