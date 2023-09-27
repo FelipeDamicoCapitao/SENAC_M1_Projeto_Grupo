@@ -14,5 +14,7 @@
 
   pré requisitos: Pyhton instalado
 
-  #1 - CLonar repositorio:
+  # Clonar Repositorio:
   https://github.com/FelipeDamicoCapitao/Trabalho_em_grupo
+
+  # entrar na pasta:
