@@ -19,7 +19,7 @@ from B1_separacao import sep3
 
 ######################################################################################################################################################
 
-def frisa():
+def frisa1():
     dias = ("Domingo", "Segunda-feira", "Sábado das campeãns")
 
     def diasprint():
@@ -117,4 +117,4 @@ def frisa():
     print(f"{NAmarelo}\nTodas as frisas contém 6 lugares{Corfim}")
     print(f"O site para compras é:\n{NCiano}https://www.totalacesso.com/events/carnavalrio2024{Corfim}\n")
 
-frisa()
+

@@ -21,7 +21,7 @@ from B1_separacao import sep3
 
 
 
-def arquibancada():
+def arquibancada1():
     setor_2_11 = ('Setor 2', 'Setor 3', 'Setor 4', 'Setor 5', 'Setor 10', 'Setor 11')
     setor_6_8 = ('Setor 6', 'Setor 7', 'Setor 8')
     setores = list(setor_2_11[0:4]) + list(setor_6_8) + list(setor_2_11[4:6])
@@ -110,4 +110,4 @@ def arquibancada():
     print(f"Você escolheu o dia: {dia_escolhido}")
     print(f"{NCiano}O preço total é: R${preco_final:.2f}\n{Corfim}")
     
-arquibancada()
+

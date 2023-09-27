@@ -89,4 +89,3 @@ def duvidas1():
         print( f"{NVermelho}Digito Errado, digite novamente{Corfim}")
         duvidas1()
 
-duvidas1()

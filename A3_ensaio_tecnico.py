@@ -74,4 +74,3 @@ def ensaios1():
     X = f"{NCinza}{X}{Corfim}"
     sep2(X)
 
-ensaios1()
