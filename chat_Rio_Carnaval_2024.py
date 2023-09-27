@@ -171,7 +171,7 @@ def fim():
 
     #Opção - Divergentes
     else:
-        print( f"{NVermelho}Digito Errado, digite novamente{cor2b}")
+        print( f"{NVermelho}Digito Errado, digite novamente{Corfim}")
         fim()
 
 # Função Pergunta final - ingresso + Geral
